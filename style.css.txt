@@ -1,0 +1,121 @@
+/* Basic CSS for a clean CV/Resume page */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #444;
+}
+
+.header h2 {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+    color: #666;
+    font-weight: 300;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h3 {
+    font-size: 1.3em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.section p, .section ul, .section li {
+    margin: 10px 0;
+}
+
+.section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.section .date {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.sub-section {
+    margin: 20px 0;
+}
+
+.sub-section h4 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.sub-section .role {
+    font-weight: bold;
+    color: #333;
+}
+
+.sub-section .location {
+    font-style: italic;
+    color: #777;
+}
+
+/* Flexbox layout for experience and education sections */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flex-item {
+    flex: 1 1 45%;
+}
+
+/* Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for print */
+@media print {
+    body {
+        background: none;
+        color: #000;
+    }
+    .container {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    a {
+        color: #000;
+    }
+}
